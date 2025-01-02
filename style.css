@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Fontdiner+Swanky&family=Jaro:opsz@6..72&family=Parkinsans:wght@300..800&family=Rubik+Vinyl&display=swap');
+*{
+    box-sizing: border-box;
+}
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    
+    background: radial-gradient(ellipse at center,  #8495cc 0%,#87e661 60%,#51ff00 60%,#d4f7d6 50%,#609262 48%);
+}
+h1{
+    font-family: "Rubik Vinyl", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    font-size: 5em;
+    color:white ;
+}
+h3{
+    font-family: "Parkinsans", serif;
+    font-optical-sizing: auto;
+    font-weight: 900;
+    font-style: normal;
+    color: white;
+}
+.box{
+    display: grid;
+    grid-template-columns: repeat(8,50px);
+    grid-template-rows: repeat(8,50px);
+    border: 1px solid rgb(155, 150, 150);
+    width: fit-content;
+   
+}
+.box-make{
+    color: grey;
+    border: 1px solid rgb(235, 234, 234);
+}
+.colour-box{
+    background: rgb(0, 255, 42);
+    border: none;
+}
+.uncolour-box{
+    background-color: rgb(163, 161, 161);
+    border: none; 
+}
+.disabled{
+    pointer-events: none;
+    opacity: 0.5;
+}
